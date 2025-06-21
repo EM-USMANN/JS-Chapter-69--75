@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #E9F3E7;
+}
+
+main {
+    flex: 1 0 auto;
+}
+
+
+
+header {
+    background-color: #1d3557;
+}
+
+footer p {
+    background-color: #1d3557;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+
+
+}
+
+footer {
+    background-color: #1d3557;
+}
+
+
+
+.custom-bg-blue {
+    background-color: #1d3557 !important;
+}
+
+#height-section {
+    min-height: 100px;
+}
+
+.input-original-string {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+
+#outputResult {
+    flex-direction: column !important;
+    align-items: center !important;
+}
