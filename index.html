@@ -72,11 +72,13 @@
                     <div class="div">
                         <p class="text-center  fs-3 mb-0 "> Buttons </p>
                     </div>
-                    <div class="div border rounded  border-secondary p-4" id="height-section">
-                        <div class="buttons d-flex flex-wrap flex-column align-items-center  gap-2">
-                            <button class="btn btn-danger w-50" onclick="getTodayName()">Show Image</button>
-                            <button class="btn btn-danger w-50" onclick="calculateDaysSinceBirth()">Show Table</button>
-                            <button class="btn btn-danger w-50" onclick="calculateNextBirthday()">Print Users in
+                    <div class="div border rounded  border-secondary p-4 d-flex justify-content-center align-items-center"
+                        id="height-section">
+                        <div class="buttons d-flex flex-column align-items-center justify-content-center  gap-2 w-100">
+                            <button class="btn btn-danger w-100" onclick="showImageModal('/Assets/Model.jpg')">Show
+                                Image</button>
+                            <button class="btn btn-danger w-100" onclick="calculateDaysSinceBirth()">Show Table</button>
+                            <button class="btn btn-danger w-100" onclick="calculateNextBirthday()">Print Users in
                                 Console</button>
                         </div>
                     </div>
@@ -86,11 +88,30 @@
                     <div class="div">
                         <p class="text-center  fs-3 mb-0 "> Form </p>
                     </div>
-                    <div class="div border rounded  border-secondary p-4 d-flex flex-wrap justify-content-center align-items-center "
-                        id="height-section">
+                    <div class="div border rounded  border-secondary p-4 " id="height-section">
 
 
-
+                        <div class="row g-3">
+                            <div class="col-6">
+                                <input type="text" class="form-control bg-transparent border-secondary"
+                                    placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col-6">
+                                <input type="text" class="form-control bg-transparent border-secondary"
+                                    placeholder="Last name" aria-label="Last name">
+                            </div>
+                            <div class="col-6">
+                                <input type="email" class="form-control bg-transparent border-secondary"
+                                    placeholder="Email" aria-label="Last name">
+                            </div>
+                            <div class="col-6">
+                                <input type="date" class="form-control bg-transparent border-secondary"
+                                    placeholder="Last name" aria-label="Last name">
+                            </div>
+                            <div class="col-12 text-center">
+                                <button type="submit" class="btn btn-success w-100">Add User</button>
+                            </div>
+                        </div>
 
 
                     </div>
@@ -102,20 +123,21 @@
 
 
 
-        <div class="container py-5">
-            <div class="row">
-                <div class="col border rounded  border-secondary p-4">
-                    <div class="buttons d-flex flex-wrap justify-content-center  gap-2">
-                        <button class="btn btn-danger" onclick="getTodayName()">Get Name of Today</button>
-                        <button class="btn btn-danger" onclick="calculateDaysSinceBirth()">Calculate Days Passed since I
-                            born</button>
-                        <button class="btn btn-danger" onclick="calculateNextBirthday()">When is your next birthday
-                            ?</button>
-                        <button class="btn btn-danger" onclick="greetUser()">Greet User</button>
-                        <button class="btn btn-danger" onclick="tellCurrentTime()">Tell User Current Time</button>
-                        <button class="btn btn-danger" onclick="refreshCheck()">Refresh Check</button>
-                        <a href="javaccript:void(0)" id="button" onclick="Button()">Button</a>
+        <!-- Box model code -->
+
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content bg-dark position-relative p-0">
+
+                    <!-- Close Button (X icon) positioned on top of image -->
+                    <button type="button" class="btn-close position-absolute top-0 end-0 m-2 z-3"
+                        data-bs-dismiss="modal" aria-label="Close"></button>
+
+                    <!-- Modal Image -->
+                    <div class="modal-body p-0">
+                        <img id="dynamicModalImage" src="" class="img-fluid w-100" alt="Preview Image">
                     </div>
+
                 </div>
             </div>
         </div>
@@ -128,7 +150,9 @@
 
 
 
-        <div class="container py-5">
+
+        <!-- OutPut Box Starts Here -->
+        <div class="container py-4">
             <div class="row">
                 <div class="col-12">
                     <p class="text-center fs-3 ">
@@ -146,7 +170,22 @@
                 </div>
             </div>
         </div>
+
+
+
+
+
+
     </main>
+
+
+
+
+
+
+
+
+
     <footer>
         <div class=" container">
             <div class="row">

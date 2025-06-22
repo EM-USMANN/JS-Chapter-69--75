@@ -42,7 +42,7 @@ footer {
 }
 
 #height-section {
-    min-height: 100px;
+    min-height: 200px;
 }
 
 .input-original-string {
@@ -54,4 +54,15 @@ footer {
 #outputResult {
     flex-direction: column !important;
     align-items: center !important;
+    height: 150px;
+}
+
+#height-section div .btn {
+    max-width: 400px !important;
+}
+
+input.form-control:focus {
+    border-color: grey !important;
+    box-shadow: 0 0 0 0.25rem rgba(128, 128, 128, 0.25);
+    /* subtle grey shadow */
 }
