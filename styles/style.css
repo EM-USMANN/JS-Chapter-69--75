@@ -45,6 +45,7 @@ footer {
     min-height: 200px;
 }
 
+
 .input-original-string {
     padding-left: 0 !important;
     padding-right: 0 !important;
@@ -54,7 +55,7 @@ footer {
 #outputResult {
     flex-direction: column !important;
     align-items: center !important;
-    height: 150px;
+    min-height: 200px;
 }
 
 #height-section div .btn {

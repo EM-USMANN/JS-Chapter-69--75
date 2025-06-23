@@ -68,7 +68,7 @@
 
         <div class="container input-original-string py-5 ">
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md-6 ">
                     <div class="div">
                         <p class="text-center  fs-3 mb-0 "> Buttons </p>
                     </div>
@@ -77,14 +77,14 @@
                         <div class="buttons d-flex flex-column align-items-center justify-content-center  gap-2 w-100">
                             <button class="btn btn-danger w-100" onclick="showImageModal('/Assets/Model.jpg')">Show
                                 Image</button>
-                            <button class="btn btn-danger w-100" onclick="calculateDaysSinceBirth()">Show Table</button>
-                            <button class="btn btn-danger w-100" onclick="calculateNextBirthday()">Print Users in
+                            <button class="btn btn-danger w-100" onclick="showUsersTable()">Show Table</button>
+                            <button class="btn btn-danger w-100" onclick="printUsersInConsole()">Print Users in
                                 Console</button>
                         </div>
                     </div>
                 </div>
 
-                <div class="col">
+                <div class="col-12 col-md-6 ">
                     <div class="div">
                         <p class="text-center  fs-3 mb-0 "> Form </p>
                     </div>
@@ -94,22 +94,23 @@
                         <div class="row g-3">
                             <div class="col-6">
                                 <input type="text" class="form-control bg-transparent border-secondary"
-                                    placeholder="First name" aria-label="First name">
+                                    placeholder="First name" id="firstName" aria-label="First name">
                             </div>
                             <div class="col-6">
                                 <input type="text" class="form-control bg-transparent border-secondary"
-                                    placeholder="Last name" aria-label="Last name">
+                                    placeholder="Last name" id="lastName" aria-label="Last name">
                             </div>
                             <div class="col-6">
                                 <input type="email" class="form-control bg-transparent border-secondary"
-                                    placeholder="Email" aria-label="Last name">
+                                    placeholder="Email" id="email" aria-label="Last name">
                             </div>
                             <div class="col-6">
-                                <input type="date" class="form-control bg-transparent border-secondary"
-                                    placeholder="Last name" aria-label="Last name">
+                                <input type="date" class="form-control bg-transparent border-secondary" id="dob"
+                                    aria-label="Last name">
                             </div>
                             <div class="col-12 text-center">
-                                <button type="submit" class="btn btn-success w-100">Add User</button>
+                                <button type="button" class="btn btn-success w-100" onclick="addUser()">Add
+                                    User</button>
                             </div>
                         </div>
 
@@ -160,11 +161,10 @@
                     </p>
                 </div>
 
-                <div class="col-12 border rounded  border-secondary p-4 d-flex justify-content-center"
-                    id="outputResult">
-
+                <div class="col-12 border rounded border-secondary p-4 d-flex align-items-center" id="outputResult">
 
                 </div>
+
                 <div class="col-12 mt-3 d-flex justify-content-center ">
                     <button class="btn text-dark border-secondary" id="clear-output">Clear Output</button>
                 </div>
